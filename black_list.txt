@@ -1,0 +1,14 @@
+select
+insert
+update
+delete
+where
+and
+or
+true
+false
+drop
+;
+.l.
+tonto
+vulgar

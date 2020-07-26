@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|index.php|css|js|images|robots\.txt|sitemap\.xml|content|img)
+RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /parcial/index.php/$1 [L]
+ErrorDocument 404 /parcial/index.php
